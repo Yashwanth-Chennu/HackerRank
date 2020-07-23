@@ -1,2 +1,5 @@
 # HackerRank
-Various HackerRank Problems using C, C++, Java, Python
+Various HackerRank Problems solutions using C, C++, Java, Python
+
+## License & Copyright
+© Yashwanth Chennu , 2020
