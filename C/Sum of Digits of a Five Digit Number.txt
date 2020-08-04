@@ -1,0 +1,27 @@
+https://github.com/Yashwanth-Chennu
+
+problem statement: https://www.hackerrank.com/challenges/sum-of-digits-of-a-five-digit-number/problem?h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen
+
+solution:
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int sum(int);
+int sum(int number){
+    int total = 0;
+    while(number > 0){
+        total += number%10 ;
+        number /= 10;
+    }
+    return total;
+}
+
+int main() {
+	
+    int n;
+    scanf("%d", &n);
+    //Complete the code to calculate the sum of the five digits on n.
+    printf("%d", sum(n));
+    return 0;
+}
