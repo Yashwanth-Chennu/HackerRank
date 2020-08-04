@@ -1,0 +1,22 @@
+https://github.com/Yashwanth-Chennu
+
+problem statement: https://www.hackerrank.com/challenges/conditional-statements-in-c/problem
+
+solution: 
+#include<stdio.h>
+void digitToString(int);
+char *string[] = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+void digitToString(int digit){
+    if(digit >=1 && digit <= 9)
+        printf("%s", *(string+(digit - 1)));
+    else
+        printf("Greater than 9");
+    
+}
+
+int main(){
+    int num;
+    scanf("%d", &num);
+    digitToString(num);
+    return 0;
+}

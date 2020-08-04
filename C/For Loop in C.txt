@@ -1,0 +1,33 @@
+https://github.com/Yashwanth-Chennu
+
+problem statement : https://www.hackerrank.com/challenges/for-loop-in-c/problem?h_r=next-challenge&h_v=zen
+
+solution:
+ #include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+void conversion(int , int);
+char *string[] = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+void conversion(int lower, int upper){
+    int i;
+    for(i = lower; i <= upper; i++){
+        if(i >= 1 && i <= 9){
+            printf("%s\n", *(string + (i - 1)));
+        }
+        else if(i%2 == 0)
+            printf("even\n");
+        else if(i%2 != 0)
+            printf("odd\n");
+    }
+}
+int main() 
+{
+    int a, b;
+    scanf("%d\n%d", &a, &b);
+  	// Complete the code.
+      conversion(a,b);  
+
+    return 0;
+}
+
