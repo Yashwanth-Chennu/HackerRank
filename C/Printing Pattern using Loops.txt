@@ -1,0 +1,37 @@
+https://github.com/Yashwanth-Chennu
+
+problem statement: https://www.hackerrank.com/challenges/printing-pattern-2/problem?h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen
+
+solution:
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int minimum(int, int);
+
+int minimum(int a, int b){
+    return a>b ? b: a;
+}
+
+int main() 
+{
+
+    int n, count = 0, row, column, rowdistance, columndistance;
+    scanf("%d", &n);
+    count = n;
+  	// Complete the code to print the pattern.
+    for(column = 1; column <= (2*n -1); column++){
+        
+        for(row = 1; row <= (2*n -1); row++){
+            rowdistance = minimum(row - 1, (2*n - 1) - row);
+            columndistance = minimum(column - 1, ((2*n-1) - column));         
+            printf("%d ", n - minimum(rowdistance, columndistance));
+        }
+        printf("\n");
+    }
+    
+    
+    return 0;
+}
