@@ -1,0 +1,37 @@
+https://github.com/Yashwanth-Chennu
+
+
+problem statement :https://www.hackerrank.com/challenges/vector-erase/problem?h_r=next-challenge&h_v=zen
+
+solution: 
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    int size, number;
+    cin >> size;
+    
+    vector<int> vec;
+    for(int i = 0; i < size; i++){
+        cin >> number;
+        vec.push_back(number);
+    }
+    int x;
+    cin >> x;
+    vec.erase(vec.begin()+x - 1);
+    int a, b;
+    cin >> a>> b;
+    vec.erase(vec.begin()+a -1 , vec.begin() + b - 1);
+    cout<< vec.size()<<"\n";
+    for(int i : vec)
+        cout<<i<<" ";      
+    return 0;
+}
+
