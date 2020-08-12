@@ -1,0 +1,24 @@
+https://github.com/Yashwanth-Chennu
+
+problem statement:https://www.hackerrank.com/challenges/c-tutorial-basic-data-types/problem
+
+solution:
+#include <iostream>
+#include <cstdio>
+#include <iomanip>
+using namespace std;
+
+
+int main() {
+    // Complete the code.
+    int integer;
+    long longNo;
+    char chr;
+    float flt;
+    double db;
+
+    cin>>integer>>longNo>>chr>>flt>>db;
+    cout<<integer<<"\n"<<longNo<<"\n"<<chr<<"\n"<<fixed<<setprecision(3)<<flt<<"\n"<<fixed<<setprecision(9)<<db<<"\n";
+    
+    return 0;
+}
